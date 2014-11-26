@@ -229,7 +229,7 @@ au()
   colors = {
     kendra: "255,0,0",
     starlight: "0,255,0",
-    blazeballs: "0,0,255",
+    blazeballs: "128,0,128",
     nordicmist: "0,128,128"
   };
 

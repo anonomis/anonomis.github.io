@@ -227,10 +227,10 @@ au()
   };
 
   colors = {
-    kendra: "255,15,100",
-    starlight: "0,15,255",
-    blazeballs: "0,22,0",
-    nordicmist: "220,17,150"
+    kendra: "255,0,0",
+    starlight: "0,255,0",
+    blazeballs: "0,0,255",
+    nordicmist: "0,128,128"
   };
 
   gems = {};

@@ -237,9 +237,9 @@ au()
 
   grid = [];
 
-  for (x = _i = 0; _i <= 10; x = ++_i) {
+  for (x = _i = 0; _i <= 5; x = ++_i) {
     grid.push([]);
-    for (y = _j = 0; _j <= 10; y = ++_j) {
+    for (y = _j = 0; _j <= 5; y = ++_j) {
       vals = [];
       for (k in colors) {
         v = colors[k];

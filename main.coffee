@@ -169,7 +169,8 @@ for x in [0..10]
   for y in [0..10]
     vals = []
     vals.push v for k,v of colors
-    gem = makeGem vals[Math.floor(Math.random() * vals.length)]
+    gem = makeGem vals[(x + y) % 4]
+    # gem = makeGem vals[Math.floor(Math.random() * vals.length)]
     grid[x].push gem
     gems[gem.id] = gem
 

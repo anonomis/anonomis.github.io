@@ -250,7 +250,7 @@ au()
       
       var col = Math.floor((Math.random() * 4 ));
       while(true) {
-        if(dist[col] >= 9) {
+        if(dist[col] < 9) {
           gem = makeGem(col);
           grid[x].push(gem);
           gems[gem.id] = gem;

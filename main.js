@@ -237,7 +237,7 @@ au()
 
   grid = [];
 
-  dist = [0,0,0,0]
+  var dist = [0,0,0,0];
 
   for (x = _i = 0; _i <= 5; x = ++_i) {
     grid.push([]);
@@ -248,16 +248,17 @@ au()
         vals.push(v);
       }
       
-      col = Math.floor((Math.random() * 4 ))
+      var col = Math.floor((Math.random() * 4 ));
       while() {
-        if(dist[col] >= 9)
-          gem = makeGem(vals[((x + y) % 4)]);
+        if(dist[col] >= 9) {
+          gem = makeGem(col]);
           grid[x].push(gem);
           gems[gem.id] = gem;
           dist[col]++
           break;
-        else
-          col = Math.floor((Math.random() * 4 ))
+        } else {
+          col = Math.floor((Math.random() * 4 ));
+        }
       }
         
     }

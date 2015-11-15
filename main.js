@@ -228,7 +228,7 @@ au()
 
   colors = {
     kendra: "255,0,0",
-    starlight: "0,255,0",
+    starlight: "70,128,70",
     blazeballs: "128,0,128",
     nordicmist: "0,128,128"
   };
@@ -245,7 +245,7 @@ au()
         v = colors[k];
         vals.push(v);
       }
-      gem = makeGem(vals[(x + y % 4)]);
+      gem = makeGem(vals[(x + y % 3)]);
       grid[x].push(gem);
       gems[gem.id] = gem;
     }

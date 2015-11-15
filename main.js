@@ -245,7 +245,7 @@ au()
         v = colors[k];
         vals.push(v);
       }
-      gem = makeGem(vals[(x + y % 3)]);
+      gem = makeGem(vals[((x + y) % 4)]);
       grid[x].push(gem);
       gems[gem.id] = gem;
     }

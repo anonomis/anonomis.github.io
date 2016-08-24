@@ -248,18 +248,9 @@ au()
         vals.push(v);
       }
       
-      var col = Math.floor((Math.random() * 4 ));
-      while(true) {
-        if(dist[col] => 9) {
-          gem = makeGem(col);
-          grid[x].push(gem);
-          gems[gem.id] = gem;
-          dist[col]++;
-          break;
-        } else {
-          col = Math.floor((Math.random() * 4 ));
-        }
-      }
+      gem = makeGem(vals[Math.floor(Math.random() * vals.length)]);
+      grid[x].push(gem);
+      gems[gem.id] = gem;
         
     }
   }

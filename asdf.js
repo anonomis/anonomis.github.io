@@ -64,7 +64,7 @@ window.setTimeout(()=> {
       state.depTime = newDate.getTime()
       
       $.ajax({
-        url: 'https://api.keyvalue.xyz/6JbTeScaBNmTkmMTMFE2sV/myKey',
+        url: 'https://cors-anywhere.herokuapp.com/api.keyvalue.xyz:443/6JbTeScaBNmTkmMTMFE2sV/myKey',
         type: 'PUT',
         data: JSON.stringify(state),
         success: function(result) {

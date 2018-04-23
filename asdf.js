@@ -1,6 +1,5 @@
 
-window.setTimeout(()=> {
-  let state = {ch: 1, depTime: 1524511110440, ok: 1}
+const init = (state) => {
 
   home = state => {
     const pos = ['hemma', 'på jobbet'][state.ch]
@@ -64,7 +63,7 @@ window.setTimeout(()=> {
       state.depTime = newDate.getTime()
       
       $.ajax({
-        url: 'https://cors-anywhere.herokuapp.com/api.keyvalue.xyz:443/new/myKey',
+        url: 'https://cors-anywhere.herokuapp.com/api.keyvalue.xyz:443/41b2dbf9/myKey',
         type: 'POST',
         data: JSON.stringify(state),
         success: function(result) {
@@ -113,4 +112,12 @@ window.setTimeout(()=> {
   
   //wizardStep2()
   
-}, 100)
+}
+
+$.ajax({
+  url: 'https://cors-anywhere.herokuapp.com/api.keyvalue.xyz:443/41b2dbf9/myKey',
+  type: 'GET',
+  success: function(result) {
+    init(JSON.parse(result))
+  }
+});

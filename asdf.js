@@ -66,7 +66,7 @@ const init = (state) => {
         url: 'https://cors-anywhere.herokuapp.com/api.keyvalue.xyz:443/41b2dbf9/myKey',
         type: 'POST',
         dataType: "json",
-        data: state,
+        data: JSON.stringify(state),
         success: function(result) {
           home(state)
         }
@@ -120,6 +120,6 @@ $.ajax({
   type: 'GET',
   dataType: "json",
   success: function(result) {
-    init(result)
+    init(JSON.parse(result))
   }
 });

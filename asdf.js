@@ -65,7 +65,7 @@ window.setTimeout(()=> {
       
       $.ajax({
         url: 'https://cors-anywhere.herokuapp.com/api.keyvalue.xyz:443/6JbTeScaBNmTkmMTMFE2sV/myKey',
-        type: 'PUT',
+        type: 'POST',
         data: JSON.stringify(state),
         success: function(result) {
           home(state)

@@ -105,7 +105,7 @@ const init = (state) => {
     let hr, min;
     setState = state => {
       var newDate = new Date()
-      if(state.ch < newDate.getHours()) {
+      if(hr < newDate.getHours()) {
         newDate.setDate(newDate.getDate() + 1) 
       }
       newDate.setHours(hr)
